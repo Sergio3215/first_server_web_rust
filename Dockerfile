@@ -11,6 +11,8 @@ RUN cargo install --path .
 
 COPY ./public ./bin/first_server_web
 
+RUN cargo run
+
 
 
 
