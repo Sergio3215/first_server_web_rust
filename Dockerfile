@@ -6,12 +6,9 @@ COPY . /app/.
 COPY ./public /app/.
 
 RUN mkdir -p bin
+COPY ./public ./bin/
 
 RUN cargo install --path .
-
-COPY ./public ./bin/first_server_web
-
-RUN cargo run
 
 
 
