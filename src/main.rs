@@ -5,7 +5,8 @@ use std::net::TcpListener;
 use std::net::TcpStream;
 
 fn main() {
-    let address = "127.0.0.1:8080";
+    // let address = "127.0.0.1:8080";
+    let address = "0.0.0.0:8080";
 
     let listener = TcpListener::bind(&address).unwrap();
 
